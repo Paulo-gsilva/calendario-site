@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding:  0;
+}
+
+.pagina{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    background: rgba(128, 128, 128, 0.178);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.349);
+    color: rgb(10, 13, 151);
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 30rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+div h1.mes{
+    position: relative;
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2.ano{
+    position: relative;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+td{
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+td:hover{
+    background: rgba(0, 173, 223, 0.8);
+    transition: 0.3s;
+    color: white;
+}
+
+table tr.semana th{
+    text-transform: uppercase;
+    background: rgba(128, 128, 128, 0.185);
+    font-size: 1.5rem;
+}
+
+table td, table th{
+    padding: 2rem;
+    border: 0.01rem solid rgba(0, 0, 0, 0.103);
+}
+
+.dia-atual{
+    background: rgba(0, 173, 223, 0.8);
+}
+
+.mes-anterior, .mes-posterior{
+    color: rgba(128, 128, 128, 0.425);
+}
+.mes-anterior:hover, .mes-posterior:hover{
+    background: rgba(128, 128, 128, 0.425);
+}
+
+.box-mes-ano{
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.mes{
+    flex-grow: 1;
+}
+
+.botao-anterior, .botao-posterior{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.377);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+@media (max-width: 750px){
+
+    header{
+        font-size: 3rem;
+    }
+
+    .box-mes-ano{
+        width: 30rem;
+    }
+    
+    td{
+        font-size: 1.5rem;
+    }
+    
+    table tr.semana th{
+        text-transform: uppercase;
+        background: rgba(128, 128, 128, 0.185);
+        font-size: 1.5rem;
+    }
+    
+    table td, table th{
+        padding: 1rem;
+        text-align: center;
+        border: 0.01rem solid rgba(0, 0, 0, 0.103);
+    }
+
+}
+
+@media(max-width: 490px){
+    header{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 450px){
+    td{
+        font-size: 1rem;
+    }
+    
+    table tr.semana th{
+        text-transform: uppercase;
+        background: rgba(128, 128, 128, 0.185);
+        font-size: 1rem;
+    }
+    
+    table td, table th{
+        padding: 1rem;
+        text-align: center;
+        border: 0.01rem solid rgba(0, 0, 0, 0.103);
+    }
+}
